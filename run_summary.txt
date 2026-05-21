@@ -1,0 +1,32 @@
+ATMOSPHERIC MOTION VECTOR MODEL DEMO SUMMARY
+=======================================================
+Image size:                 192 x 192 pixels
+Pixel scale:                4.00 km/pixel
+Time step:                  10.00 minutes
+Tracking window:            25 x 25 pixels
+Search radius:              +/- 10 pixels
+Grid step:                  16 pixels
+
+Raw vectors attempted:       95
+Basic QC passed:             20
+Final QC passed:             20
+
+Final QC statistics:
+  Median vector error:       5.46 km/h
+  Mean vector error:         5.92 km/h
+  90th percentile error:     10.66 km/h
+  Median NCC correlation:    0.979
+  Median assigned height:    2.72 km
+
+QC tests:
+  min_corr >= 0.55
+  corr margin >= 0.015
+  speed <= 420.0 km/h
+  neighbour consistency <= 80.0 km/h
+
+Interpretation:
+  This is an educational, synthetic AMV pipeline. A real operational
+  AMV system would need navigation calibration, channel-specific cloud
+  masking, radiative-transfer or NWP-assisted height assignment,
+  parallax correction, objective quality indicators, and validation
+  against radiosondes, aircraft, scatterometers, or NWP analysis winds.
